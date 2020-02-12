@@ -16,7 +16,7 @@ function introduction() {
 
 function nextSituation() {
   if(situation == 0) removeTextFromElement("instructions")
-  if(!situations.hasOwnProperty(situation) {
+  if(!situations.hasOwnProperty(situation)) {
     end()
   }
   displayText(situations[situation].text)
@@ -68,8 +68,8 @@ function displayText(text) {
 }
 
 function clearChildrenOf(el) {
-  const children = el.children
-  if(children) {
+  const children = el.childNodes;
+  if(children && children.length > 0) {
     children.forEach(child => el.removeChild(child));
   }
 }
@@ -89,14 +89,14 @@ function addLink(url, text) {
 function createNextButton() {
   let ul = document.getElementById("game-choices")
   clearChildrenOf(ul)  //clear buttons if there were buttons before
-  ul.appendChild(getButton("Continue", () -> nextSituation())) //create new button
+  ul.appendChild(getButton("Continue", () => nextSituation())) //create new button
 }
 
 function createOptionButtons(options) {
   let div = document.getElementById("game-choices")
   clearChildrenOf(div)  //clear buttons if there were buttons before
-  options.foreach(s -> {  //create new buttons
-    div.appendChild(getButton(s.text, () -> {
+  options.forEach(s => {  //create new buttons
+    div.appendChild(getButton(s.text, () => {
       updateCode(s.scala, s.value)
       displayText(s.response)
       createNextButton()
@@ -111,9 +111,9 @@ function getButton(text, clickReaction) {
   const t = document.createTextNode(text)
   b.appendChild(t)
 
-  b.value = value
+  // b.value = value;
   b.onclick = clickReaction
-  b..classList.add("button");
+  b.classList.add("button");
 
   return b
 }
