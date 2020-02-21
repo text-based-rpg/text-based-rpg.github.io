@@ -1,6 +1,10 @@
-import {situations} from "./situations.js";
 
 window.onload = introduction()
+
+let situations = []
+fetch("assets/situations.json")
+    .then(response => response.json())
+    .then(json => situations = json.situations)
 
 let currentSituation = 0
 let code = ""
@@ -13,13 +17,26 @@ function introduction() {
     createContinueButton()
 }
 
+function displayResult(answer) {
+    clearText();
+    clearOptions();
+    if (answer !== null) {
+        displayText(situations[currentSituation -1].options[answer].result)
+    }
+    window.setTimeout(
+        () => {
+            clearText()
+            nextSituation()
+        },
+        5000
+    )
+}
+
 function nextSituation() {
     if (currentSituation >= situations.length) {
         end();
         return;
     }
-    clearText();
-    clearOptions();
     displayText(situations[currentSituation].text)
     displayOptions(situations[currentSituation].options)
     currentSituation++
@@ -88,11 +105,16 @@ function createContinueButton() {
 function displayOptions(options) {
     let gameChoiceDiv = document.getElementById("game-choices")
     clearChildrenOf(gameChoiceDiv)  //clear buttons if there were buttons before
-    options.forEach(s => {  //create new buttons
-        gameChoiceDiv.appendChild(createButton(s.text, () => {
-            updateCode(s.value);
-            nextSituation();
-        }))
+    options.forEach((option, index) => {  //create new buttons
+        gameChoiceDiv.appendChild(
+            createButton(
+                option.text,
+                () => {
+                    updateCode(option.value);
+                    displayResult(index);
+                }
+            )
+        )
     })
     gameChoiceDiv.classList.add("button-collection");
 }
@@ -109,3 +131,4 @@ function createButton(text, clickReaction) {
 
     return b
 }
+
