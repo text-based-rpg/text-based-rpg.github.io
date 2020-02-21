@@ -5,18 +5,185 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="assets/style.css">
-<script type="module" src="scripts/main.js"></script>
+<!--<script type="module" src="scripts/main.js"></script>-->
+<script type="text/javascript">
+let currentSituation = 0
+let code = ""
+
+/* Functions for game play */
+
+function introduction() {
+    displayText("Welcome to TITLE! We want to make this game a good experience for our target groups. "
+        + "For that we need your help. Please play this game and fill out our questionnaire afterwards.");
+    createContinueButton()
+}
+
+function nextSituation() {
+    if (currentSituation >= situations.length) {
+        end();
+        return;
+    }
+    clearText();
+    clearOptions();
+    displayText(situations[currentSituation].text)
+    displayOptions(situations[currentSituation].options)
+    currentSituation++
+}
+
+function end() {
+    clearText();
+    clearOptions();
+    displayText("Thank you for playing! Please help us improve our game by answering a few questions!\n"
+        + "In order to do so, please copy the code displayed below,"
+        + "open the questionnaire by clicking on the button (opens in a new tab)"
+        + "and paste the code into the appropriate field on the first page of the questionnaire.")
+    displayText(code);
+    addLink("https://example.com", "Magically take me to the questionnaire") //TODO Update link
+}
+
+function updateCode(value) {
+    code += value;
+}
+
+/* DOM manipulation helpers */
+
+
+function clearText() {
+    let p = document.getElementById("game-text")
+    clearChildrenOf(p) //clear text if there was text before & if not just adding text
+}
+
+function displayText(text) {
+    let gameText = document.getElementById("game-text");
+    if (!text) return;
+    const p = document.createElement("p");
+    const t = document.createTextNode(text); //create new text
+    p.appendChild(t)
+    gameText.appendChild(p);
+}
+
+function clearOptions(){
+    let gameChoiceDiv = document.getElementById("game-choices")
+    clearChildrenOf(gameChoiceDiv)  //clear buttons if there were buttons before
+}
+
+function clearChildrenOf(node) {
+    while (node.firstChild) {
+        node.removeChild(node.firstChild);
+    }
+}
+
+function addLink(url, text) {
+    let gameTextDiv = document.getElementById("game-text")
+    let a = document.createElement("a")
+    a.href = url
+    a.text = (text) ? text : url
+    a.target = "_blank"
+    a.classList.add("button");
+    gameTextDiv.append(a)
+}
+
+/* Buttons */
+
+function createContinueButton() {
+    let ul = document.getElementById("game-choices")
+    ul.appendChild(createButton("Continue", () => nextSituation())) //create new button
+}
+
+function displayOptions(options) {
+    let gameChoiceDiv = document.getElementById("game-choices")
+    clearChildrenOf(gameChoiceDiv)  //clear buttons if there were buttons before
+    options.forEach(s => {  //create new buttons
+        gameChoiceDiv.appendChild(createButton(s.text, () => {
+            updateCode(s.value);
+            nextSituation();
+        }))
+    })
+    gameChoiceDiv.classList.add("button-collection");
+}
+
+function createButton(text, clickReaction) {
+    let b = document.createElement("button")
+
+    const t = document.createTextNode(text)
+    b.appendChild(t)
+
+    // b.value = value;
+    b.onclick = clickReaction
+    // b.classList.add("button");
+
+    return b
+}
+
+const situations = [
+    {
+        text: "You come upon a cave. Your hear a deep growling from inside the cave. What are you doing",
+        scala: "empathy",
+        options: [
+            {
+                text: "You are on an important mission, you keep going",
+                value: 1,
+            },
+            {
+                text: "You sneak upon the cave to gather more information",
+                value: 3,
+            },
+            {
+                text: "you enter the cave curiously",
+                value: 5,
+            }
+        ]
+    },
+    {
+        text: "You´re distracted for a moment. That’s enough to fall into a big pound of mud you oversaw. Your companions are mockingly laughing loudly. What ist your action?",
+        scala: "empathy",
+        options: [
+            {
+                text: "You demand to be freed immediately",
+                value: 1,
+            },
+            {
+                text: "you throw some mud at them to make it square",
+                value: 3,
+            },
+            {
+                text: "you laugh humorfully with them and try to get out of the hole",
+                value: 5,
+            }
+        ]
+    },
+    {
+        text: "You approach an camp of Ogres, there is no wqay around. Battle is the only option. How will you succed?",
+        scala: "orderliness",
+        options: [
+            {
+                text: "You´ll storm their camp and get them by surprise and overwhelming fighting power",
+                value: 1,
+            },
+            {
+                text: "You prepare for battle. You get prepared as best as you can but what will happen happens",
+                value: 3,
+            },
+            {
+                text: "You have the perfect masterplan. The mage in your entourage tries to losen the bolders on the cliff and the rouge will lay some traps. There is no possibility you´ll lose",
+                value: 5,
+            }
+        ]
+    }
+]
+
+</script>
 </head>
-<body>
+<body onload="introduction()">
 <header>
   <h1>RPG TITLE</h1>
 </header>
-<section id="game">
+<main id="game">
 
   <div id="game-text"></div>
 
-  <ul id="game-choices"></ul>
-</section>
+  <ul  id="game-choices"></ul>
+</main>
 <footer>
   RPG TITLE 2020 - L. Fernsel, R. Krajewski, F. Schlüter, D. Wunderlich - HTW Berlin
 </footer>

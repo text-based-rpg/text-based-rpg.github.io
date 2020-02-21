@@ -8,7 +8,7 @@ let code = ""
 /* Functions for game play */
 
 function introduction() {
-    displayText("Welcome to TITLE! We want to make this game a good experience for our target groups."
+    displayText("Welcome to TITLE! We want to make this game a good experience for our target groups. "
         + "For that we need your help. Please play this game and fill out our questionnaire afterwards.");
     createContinueButton()
 }
@@ -105,7 +105,7 @@ function createButton(text, clickReaction) {
 
     // b.value = value;
     b.onclick = clickReaction
-    b.classList.add("button");
+    // b.classList.add("button");
 
     return b
 }
