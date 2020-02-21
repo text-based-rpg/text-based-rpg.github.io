@@ -32,7 +32,7 @@ function end() {
         + "In order to do so, please copy the code displayed below,"
         + "open the questionnaire by clicking on the button (opens in a new tab)"
         + "and paste the code into the appropriate field on the first page of the questionnaire.")
-    displayText(code);
+    displayCode(code);
     addLink("https://example.com", "Magically take me to the questionnaire") //TODO Update link
 }
 
@@ -49,12 +49,28 @@ function clearText() {
 }
 
 function displayText(text) {
-    let gameText = document.getElementById("game-text");
     if (!text) return;
+    let gameText = document.getElementById("game-text");
     const p = document.createElement("p");
     const t = document.createTextNode(text); //create new text
     p.appendChild(t)
     gameText.appendChild(p);
+}
+
+function displayCode(code) {
+  if (!code) return;
+  let gameText = document.getElementById("game-text");
+  const p = document.createElement("p");
+
+  const t = document.createTextNode(code); //create new text
+  p.appendChild(t)
+  p.classList.add("code");
+  p.id = "toCopy"
+  gameText.appendChild(p);
+
+  let b = getCopyButton() //create copy button
+  b.classList.add("copy-button")
+  gameText.appendChild(b)
 }
 
 function clearOptions(){
@@ -85,6 +101,10 @@ function createContinueButton() {
     ul.appendChild(createButton("Continue", () => nextSituation())) //create new button
 }
 
+function getCopyButton() {
+    return createButton("Copy", () => copyToClipboard())
+}
+
 function displayOptions(options) {
     let gameChoiceDiv = document.getElementById("game-choices")
     clearChildrenOf(gameChoiceDiv)  //clear buttons if there were buttons before
@@ -105,7 +125,16 @@ function createButton(text, clickReaction) {
 
     // b.value = value;
     b.onclick = clickReaction
-    // b.classList.add("button");
+    b.classList.add("button");
 
     return b
+}
+
+/* Helpers */
+function copyToClipboard() {
+  //TODO: Make it work
+    let toCopy = document.getElementById("toCopy")
+    toCopy.select()
+    toCopy.setSelectionRange(0, 99999);
+    document.execCommand("copy");
 }

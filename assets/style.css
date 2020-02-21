@@ -47,18 +47,18 @@ ul {
   list-style: none;
 }
 
-button, button:focus, button:active, button::-moz-focus-inner {
+button, button:focus, button:active, button::-moz-focus-inner, .button {
   border: 0;
   text-align: left;
 }
 
-button:hover {
+button:hover, .button:hover {
   color: #4cff33;
 }
 
 a {
   /* Todo: Clear all styles*/
-
+  text-decoration: none;
 }
 
 .button-collection {
@@ -75,5 +75,16 @@ a {
 }
 
 .code {
+  background-color: #dfdfdf;
+  color: #1c1c1c;
+  text-align: center;
+  padding: 0.7rem;
+}
 
+.code:hover {
+  cursor: text;
+}
+
+.copy-button {
+  /* should be next to the code that this button copies */
 }
