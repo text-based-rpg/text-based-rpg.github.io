@@ -4,6 +4,7 @@ window.onload = introduction()
 
 let currentSituation = 0
 let code = ""
+const buttonSymbol = "> "
 
 /* Functions for game play */
 
@@ -29,8 +30,8 @@ function end() {
     clearText();
     clearOptions();
     displayText("Thank you for playing! Please help us improve our game by answering a few questions!\n"
-        + "In order to do so, please copy the code displayed below,"
-        + "open the questionnaire by clicking on the button (opens in a new tab)"
+        + "In order to do so, please copy the code displayed below, "
+        + "open the questionnaire by clicking on the button (opens in a new tab) "
         + "and paste the code into the appropriate field on the first page of the questionnaire.")
     displayCode(code);
     addLink("https://example.com", "Magically take me to the questionnaire") //TODO Update link
@@ -41,8 +42,6 @@ function updateCode(value) {
 }
 
 /* DOM manipulation helpers */
-
-
 function clearText() {
     let p = document.getElementById("game-text")
     clearChildrenOf(p) //clear text if there was text before & if not just adding text
@@ -60,17 +59,32 @@ function displayText(text) {
 function displayCode(code) {
   if (!code) return;
   let gameText = document.getElementById("game-text");
+
+  const d = document.createElement("div");
   const p = document.createElement("p");
 
   const t = document.createTextNode(code); //create new text
   p.appendChild(t)
-  p.classList.add("code");
   p.id = "toCopy"
-  gameText.appendChild(p);
+  d.appendChild(p);
 
   let b = getCopyButton() //create copy button
   b.classList.add("copy-button")
-  gameText.appendChild(b)
+  d.append(b)
+
+  d.classList.add("code-collection")
+
+  gameText.appendChild(d)
+}
+
+function addLink(url, text) {
+    let gameTextDiv = document.getElementById("game-text")
+    let a = document.createElement("a")
+    a.href = url
+    a.text = (text) ? buttonSymbol + text : url
+    a.target = "_blank"
+    a.classList.add("button");
+    gameTextDiv.append(a)
 }
 
 function clearOptions(){
@@ -84,17 +98,8 @@ function clearChildrenOf(node) {
     }
 }
 
-function addLink(url, text) {
-    let gameTextDiv = document.getElementById("game-text")
-    let a = document.createElement("a")
-    a.href = url
-    a.text = (text) ? text : url
-    a.target = "_blank"
-    a.classList.add("button");
-    gameTextDiv.append(a)
-}
-
 /* Buttons */
+
 
 function createContinueButton() {
     let ul = document.getElementById("game-choices")
@@ -120,7 +125,7 @@ function displayOptions(options) {
 function createButton(text, clickReaction) {
     let b = document.createElement("button")
 
-    const t = document.createTextNode(text)
+    const t = document.createTextNode(buttonSymbol + text)
     b.appendChild(t)
 
     // b.value = value;
