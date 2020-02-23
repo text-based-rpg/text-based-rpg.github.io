@@ -61,15 +61,17 @@ function displayCode(code) {
   let gameText = document.getElementById("game-text");
 
   const d = document.createElement("div");
-  const p = document.createElement("p");
 
-  const t = document.createTextNode(code); //create new text
+  // display the code
+  const p = document.createElement("p");
+  const t = document.createTextNode(code);
   p.appendChild(t)
   p.id = "toCopy"
   d.appendChild(p);
 
+  // add a button that copies the code
   let b = getCopyButton() //create copy button
-  b.classList.add("copy-button")
+  b.id = "copyButton"
   d.append(b)
 
   d.classList.add("code-collection")
@@ -99,8 +101,6 @@ function clearChildrenOf(node) {
 }
 
 /* Buttons */
-
-
 function createContinueButton() {
     let ul = document.getElementById("game-choices")
     ul.appendChild(createButton("Continue", () => nextSituation())) //create new button
@@ -137,9 +137,27 @@ function createButton(text, clickReaction) {
 
 /* Helpers */
 function copyToClipboard() {
-  //TODO: Make it work
-    let toCopy = document.getElementById("toCopy")
-    toCopy.select()
-    toCopy.setSelectionRange(0, 99999);
-    document.execCommand("copy");
+  // hold code in a textarea to be able to copy it into the clipboard with js
+  // https://paulund.co.uk/javascript-copy-and-paste
+  let textarea = document.createElement("textarea")
+  textarea.value = code
+  textarea.setAttribute("readonly", "")
+  textarea.style.position = 'absolute';
+  textarea.style.left = '-9999px';
+  document.body.appendChild(textarea)
+
+  textarea.select()
+  textarea.setSelectionRange(0, 99999) //for mobile
+
+  try {
+      document.execCommand("copy")
+      let b = document.getElementById("copyButton")
+      clearChildrenOf(b)
+      const t = document.createTextNode("Copied")
+      b.appendChild(t)
+  } catch(err) {
+      alert("Sorry, that didn't work! Please try copying the code manually.")
+  }
+
+  textarea.remove()
 }

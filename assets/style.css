@@ -92,9 +92,14 @@ a {
   cursor: text;
 }
 
-.copy-button {
-  /* should be next to the code that this button copies */
+#copyButton {
    color: inherit;
    background-color: #fff;
    padding: 0 0.7rem;
+}
+
+.copying-successfull {
+  cursor: default !important;
+  background-color: #1c1c1c !important;
+  color: #dfdfdf !important;
 }
