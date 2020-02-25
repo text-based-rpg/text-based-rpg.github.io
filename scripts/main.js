@@ -1,14 +1,16 @@
 import {situations} from "./situations.js";
 
-window.onload = introduction()
-
 let currentSituation = 0
+
 let code = ""
+const buttonSymbol = "> "
+
+window.onload = introduction()
 
 /* Functions for game play */
 
 function introduction() {
-    displayText("Welcome to TITLE! We want to make this game a good experience for our target groups."
+    displayText("Welcome to TITLE! We want to make this game a good experience for our target groups. "
         + "For that we need your help. Please play this game and fill out our questionnaire afterwards.");
     createContinueButton()
 }
@@ -29,10 +31,10 @@ function end() {
     clearText();
     clearOptions();
     displayText("Thank you for playing! Please help us improve our game by answering a few questions!\n"
-        + "In order to do so, please copy the code displayed below,"
-        + "open the questionnaire by clicking on the button (opens in a new tab)"
+        + "In order to do so, please copy the code displayed below, "
+        + "open the questionnaire by clicking on the button (opens in a new tab) "
         + "and paste the code into the appropriate field on the first page of the questionnaire.")
-    displayText(code);
+    displayCode(code);
     addLink("https://example.com", "Magically take me to the questionnaire") //TODO Update link
 }
 
@@ -41,20 +43,51 @@ function updateCode(value) {
 }
 
 /* DOM manipulation helpers */
-
-
 function clearText() {
     let p = document.getElementById("game-text")
     clearChildrenOf(p) //clear text if there was text before & if not just adding text
 }
 
 function displayText(text) {
-    let gameText = document.getElementById("game-text");
     if (!text) return;
+    let gameText = document.getElementById("game-text");
     const p = document.createElement("p");
     const t = document.createTextNode(text); //create new text
     p.appendChild(t)
     gameText.appendChild(p);
+}
+
+function displayCode(code) {
+  if (!code) return;
+  let gameText = document.getElementById("game-text");
+
+  const d = document.createElement("div");
+
+  // display the code
+  const p = document.createElement("p");
+  const t = document.createTextNode(code);
+  p.appendChild(t)
+  p.id = "toCopy"
+  d.appendChild(p);
+
+  // add a button that copies the code
+  let b = getCopyButton() //create copy button
+  b.id = "copyButton"
+  d.append(b)
+
+  d.classList.add("code-collection")
+
+  gameText.appendChild(d)
+}
+
+function addLink(url, text) {
+    let gameTextDiv = document.getElementById("game-text")
+    let a = document.createElement("a")
+    a.href = url
+    a.text = (text) ? buttonSymbol + text : url
+    a.target = "_blank"
+    a.classList.add("button");
+    gameTextDiv.append(a)
 }
 
 function clearOptions(){
@@ -68,21 +101,14 @@ function clearChildrenOf(node) {
     }
 }
 
-function addLink(url, text) {
-    let gameTextDiv = document.getElementById("game-text")
-    let a = document.createElement("a")
-    a.href = url
-    a.text = (text) ? text : url
-    a.target = "_blank"
-    a.classList.add("button");
-    gameTextDiv.append(a)
-}
-
 /* Buttons */
-
 function createContinueButton() {
     let ul = document.getElementById("game-choices")
     ul.appendChild(createButton("Continue", () => nextSituation())) //create new button
+}
+
+function getCopyButton() {
+    return createButton("Copy", () => copyToClipboard())
 }
 
 function displayOptions(options) {
@@ -100,7 +126,7 @@ function displayOptions(options) {
 function createButton(text, clickReaction) {
     let b = document.createElement("button")
 
-    const t = document.createTextNode(text)
+    const t = document.createTextNode(buttonSymbol + text)
     b.appendChild(t)
 
     // b.value = value;
@@ -108,4 +134,31 @@ function createButton(text, clickReaction) {
     b.classList.add("button");
 
     return b
+}
+
+/* Helpers */
+function copyToClipboard() {
+  // hold code in a textarea to be able to copy it into the clipboard with js
+  // https://paulund.co.uk/javascript-copy-and-paste
+  let textarea = document.createElement("textarea")
+  textarea.value = code
+  textarea.setAttribute("readonly", "")
+  textarea.style.position = 'absolute';
+  textarea.style.left = '-9999px';
+  document.body.appendChild(textarea)
+
+  textarea.select()
+  textarea.setSelectionRange(0, 99999) //for mobile
+
+  try {
+      document.execCommand("copy")
+      let b = document.getElementById("copyButton")
+      clearChildrenOf(b)
+      const t = document.createTextNode("Copied")
+      b.appendChild(t)
+  } catch(err) {
+      alert("Sorry, that didn't work! Please try copying the code manually.")
+  }
+
+  textarea.remove()
 }
