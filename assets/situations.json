@@ -1,20 +1,20 @@
 {
     "situations": [
         {
-            "text": "You come upon a cave. Your hear a deep growling from inside the cave. What are you doing",
+            "text": "You come upon a cave. Your hear a deep growling from inside the cave. What are you going to do?",
             "options": [
                 {
-                    "text": "You are on an important mission, you keep going",
+                    "text": "You are on an important mission, you keep going.",
                     "value": 1,
-                    "result": "You continue your path dutifuly"
+                    "result": "You continue your path dutifully."
                 },
                 {
-                    "text": "You sneak upon the cave to gather more information",
+                    "text": "You sneak upon the cave to gather more information.",
                     "value": 3,
-                    "result": "As you come close to the cave, an even bigger growl scares you away. You continue"
+                    "result": "As you come close to the cave, an even bigger growl scares you away. You continue."
                 },
                 {
-                    "text": "You enter the cave curiously",
+                    "text": "You enter the cave curiously.",
                     "value": 5,
                     "result": "As you enter the cave, you see that the howl is made by an airstream moving through some holes in the cave ceiling."
                 }
