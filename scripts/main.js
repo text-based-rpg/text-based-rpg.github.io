@@ -1,10 +1,11 @@
 import {situations} from "./situations.js";
 
-window.onload = introduction()
-
 let currentSituation = 0
+
 let code = ""
 const buttonSymbol = "> "
+
+window.onload = introduction()
 
 /* Functions for game play */
 
