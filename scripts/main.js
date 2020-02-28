@@ -1,10 +1,20 @@
 
 let situations = []
+let startText = ""
+let endOptions = {}
 fetch("assets/situations.json")
     .then(response => response.json())
-    .then(json => situations = json.situations)
+    .then(json => {
+        situations = json.situations
+        startText = json.start
+        endOptions = json.end
+    })
 
-let currentSituation = 0
+let currentSituation = -1
+
+let Empathie = 0
+let Verantwortungsbewusstsein = 0
+let Ordnung = 0
 
 let code = ""
 const buttonSymbol = "> "
@@ -29,18 +39,46 @@ function displayResult(answer) {
 }
 
 function nextSituation() {
-    if (currentSituation >= situations.length) {
+    if (currentSituation > situations.length) {
+        forwarding();
+        return;
+    } else if ( currentSituation === situations.length) {
         end();
+        currentSituation++
+        return;
+    } else if (currentSituation < 0){
+        begin();
+        currentSituation++
         return;
     }
-    displayText(situations[currentSituation].text)
-    displayOptions(situations[currentSituation].options)
+    const situation = situations[currentSituation]
+    displayText(situation.text)
+    displayOptions(situation.options, situation.scale)
     currentSituation++
 }
 
+function begin(){
+    displayText(startText);
+    createContinueButton();
+}
+
 function end() {
+    let text = ''
+    if (Empathie > Ordnung && Empathie > Verantwortungsbewusstsein) {
+        text = endOptions.Empathie
+    } else if (Ordnung > Empathie && Ordnung > Verantwortungsbewusstsein) {
+        text = endOptions.Ordnung
+    } else {
+        text = endOptions.Verantwortungsbewusstsein
+    }
     clearText();
     clearOptions();
+    displayText(text)
+    createContinueButton();
+}
+
+function forwarding() {
+    clearText();
     displayText("Thank you for playing! Please help us improve our game by answering a few questions!\n"
         + "In order to do so, please copy the code displayed below, "
         + "open the questionnaire by clicking on the button (opens in a new tab) "
@@ -51,6 +89,20 @@ function end() {
 
 function updateCode(value) {
     code += value;
+}
+
+function updateScale(value, scale) {
+    switch (scale) {
+        case 'Ordnung':
+            Ordnung += value
+            break;
+        case 'Verantwortungsbewusstsein':
+            Verantwortungsbewusstsein += value
+            break;
+        case 'Empathie':
+            Empathie += value
+            break;
+    }
 }
 
 /* DOM manipulation helpers */
@@ -126,7 +178,7 @@ function getCopyButton() {
     return createButton("Copy", () => copyToClipboard())
 }
 
-function displayOptions(options) {
+function displayOptions(options, scale) {
     let gameChoiceDiv = document.getElementById("game-choices")
     clearChildrenOf(gameChoiceDiv)  //clear buttons if there were buttons before
     options.forEach((option, index) => {  //create new buttons
@@ -135,6 +187,7 @@ function displayOptions(options) {
                 option.text,
                 () => {
                     updateCode(option.value);
+                    updateScale(option.value, scale)
                     displayResult(index);
                 }
             )
