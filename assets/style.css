@@ -1,0 +1,105 @@
+*, html {
+  box-sizing: border-box;
+  font-family: monospace;
+  font-size: 1.1rem;
+  background-color: #1c1c1c;
+  color: #dfdfdf;
+  line-height: 1.5;
+}
+
+body {
+  max-width: 90vw;
+  width: 500px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  font-size: 180%;
+}
+
+main {
+  min-height: 70vh;
+}
+
+footer {
+  padding-top: 1.4rem;
+  padding-bottom: 0.7rem;
+  color: #959393;
+  text-align: center;
+  font-size: 70%;
+  width: inherit;
+  max-width: inherit;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button, button:focus, button:active, button::-moz-focus-inner, .button {
+  border: 0;
+  text-align: left;
+}
+
+button:hover, .button:hover {
+  color: #4cff33;
+  cursor: pointer;
+}
+
+a {
+  /* Todo: Clear all styles*/
+  text-decoration: none;
+  text-align: center !important;
+  display: block;
+}
+
+.button-collection {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  grid-gap: 0.7rem;
+}
+
+@media screen and (max-width: 500px) {
+  .button-collection {
+    grid-auto-flow: row;
+  }
+}
+
+.code-collection {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 8fr auto;
+  margin: 0.7rem;
+  background-color: #dfdfdf;
+  color: #1c1c1c;
+}
+
+#toCopy {
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  padding: 0.7rem;
+  margin: 0;
+}
+
+#toCopy:hover {
+  cursor: text;
+}
+
+#copyButton {
+   color: inherit;
+   background-color: #fff;
+   padding: 0 0.7rem;
+}
+
+.copying-successfull {
+  cursor: default !important;
+  background-color: #1c1c1c !important;
+  color: #dfdfdf !important;
+}

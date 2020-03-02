@@ -1,0 +1,620 @@
+{   
+    "start": "After a long night out you get lost in the woods. In the next morning you find yourself in a strange and magical Land. After learning there is no way back to your reality, you get adopted by a group of adventures. Because of your skills and cleverness you soon become their leader. Well prepared and trained you start your journey to find the place that is best suited for you. Where will your journey bring you?",
+    "situations": [
+        {
+            "text": "You come upon a cave. Your hear a deep growling from inside the cave. What are you going to do?",
+			"scale": "Empathie",
+            "options": [
+                {
+                    "text": "You are on an important mission, you keep going.",
+                    "value": 1,
+                    "result": "You continue your path dutifully."
+                },
+                {
+                    "text": "You sneak upon the cave to gather more information.",
+                    "value": 3,
+                    "result": "As you come close to the cave, an even bigger growl scares you away. You continue."
+                },
+                {
+                    "text": "You enter the cave curiously.",
+                    "value": 5,
+                    "result": "As you enter the cave, you see that the howl is made by an airstream moving through some holes in the cave ceiling."
+                }
+            ]
+        },
+        {
+            "text": "You´re distracted for a moment. That’s enough to fall into a big pound of mud you oversaw. Your companions are mockingly laughing loudly. What ist your action?",
+			"scale": "Empathie",
+            "options": [
+                {
+                    "text": "You demand to be freed immediately",
+                    "value": 1,
+                    "result": "You´re helped out of the hole and continue your journey dirty."
+                },
+                {
+                    "text": "You throw some mud at them to make it square",
+                    "value": 3,
+                    "result": "You´re helped out of the hole and continue your journey dirty."
+                },
+                {
+                    "text": "You laugh humorfully with them and try to get out of the hole",
+                    "value": 5,
+                    "result": "You´re helped out of the hole and continue your journey dirty."
+                }
+            ]
+        },
+        {
+            "text": "Soon the sun sets and you´ve make a camp to spend the night. After a while you hear some strange noises and rattling. The youngest of your companions seems really scared.",
+			"scale": "Empathie",
+            "options": [
+                {
+                    "text": "The undead are approaching. Better be save and form and defense ring.",
+                    "value": 1,
+                    "result": "You stay awake and nothing happends. Tired you continue the journey on the next morning."
+                },
+                {
+                    "text": "You climb the a tree and scout the position. You try to calm the young warrior.",
+                    "value": 3,
+                    "result": "You stay awake and are tired the next morning. Nothing happened, but your group got sleep and is well rested."
+                },
+                {
+                    "text": "You keep the others calm, and say there are no undead seen in centuries in that part of the world. You make sure they find there needed rest but stay alarmed.",
+                    "value": 5,
+                    "result": "As expected, nothing happened, you can get a little bit of sleep. You continue your journey well rested."
+                }
+            ]
+        },
+        {
+            "text": "On the road, you come upon an crudily constructed fort, blocking the path. On top you see a gnarly creature pointing an bow at you.",
+			"scale": "Empathie",
+            "options": [
+                {
+                    "text": "You attack the fort and try top overwhelm it",
+                    "value": 1,
+                    "result": "After a long fight, you overwhelm the fort and scare the creature away. You continue on your path."
+                },
+                {
+                    "text": "You demand passage and wont accept any hostilities.",
+                    "value": 3,
+                    "result": "He aggrees under the condition of payment. You lose some of your gold"
+                },
+                {
+                    "text": "You greet him friendly and ask if he would be willing to let you through on your important mission.",
+                    "value": 5,
+                    "result": "After realising you mean no harm to him, he gets friendlier and lets you go on."
+                }
+            ]
+        },
+        {
+            "text": "You come across an strange looking merchant with some mysterious artefacts. He offers you to choose any of its items, but warns you, that you don´t pay with money.",
+			"scale": "Empathie",
+            "options": [
+                {
+                    "text": "You say thank you, but no thank. ",
+                    "value": 1,
+                    "result": "The merchant seems disappointed, and moves on. So are you."
+                },
+                {
+                    "text": "You ask for a object that will guide you through the forrest.",
+                    "value": 3,
+                    "result": "As you go through his stock, you see a mysterious map. It seems like it shows all the animals moving around in your area."
+                },
+                {
+                    "text": "You ask for something magical, that helps you uncover secrets",
+                    "value": 5,
+                    "result": "You find an glas eye that is kept in a jar full of a strange liquid. The merchant tells you about great secrets it will help you uncover, but warns about the great price it will cost you."
+                }
+            ]
+        },
+        {
+            "text": "A singing pixie has started you following days ago. In the most beautiful voice it renders your current activities in song.",
+			"scale": "Empathie",
+            "options": [
+                {
+                    "text": "It’s the best thing ever happenend to you",
+                    "value": -1,
+                    "result": "You continue your journey with your new friend happily. The rising number of attacks is more than worth it."
+                },
+                {
+                    "text": "You enjoy the song but are afraid of the dangers the song will attrack and you could use some sleep. You hush her away.",
+                    "value": -3,
+                    "result": "You soon begin to miss your companion, but are happy you´ve meet it."
+                },
+                {
+                    "text": "You get annoyed really soon and hush her away.",
+                    "value": -5,
+                    "result": "You´re happy the pixie is away. You continue your journey."
+                }
+            ]
+        },
+        {
+            "text": "You come across a beautiful spot a painter choosed for a painting. He ask you to join the scenery and stand model for him. ",
+			"scale": "Empathie",
+            "options": [
+                {
+                    "text": "You choose to make an happy face and aks your entourage to pose friendly",
+                    "value": -1,
+                    "result": "The painting is a masterpiece. Soon it´ll hang in some king´s hall."
+                },
+                {
+                    "text": "You try to make an impression and pose as majestic as possible",
+                    "value": -3,
+                    "result": "The painting is a masterpiece. Soon it´ll hang in some king´s hall."
+                },
+                {
+                    "text": "You pose as a brutish warrior and make a scary face",
+                    "value": -5,
+                    "result": "The painting is a masterpiece. Soon it´ll hang in some king´s hall."
+                }
+            ]
+        },
+        {
+            "text": "After some time, the rogue of your group is tired of adventuring. He wants to leave the group and go back to stealing stuff.",
+			"scale": "Empathie",
+            "options": [
+                {
+                    "text": "You wish him luck and let him leave.",
+                    "value": -1,
+                    "result": "You continue the journey without him. "
+                },
+                {
+                    "text": "You let him leave, but you will need a new rogue.",
+                    "value": -3,
+                    "result": "It´s hard to adventure without him. But in the next inn you find a new rogue."
+                },
+                {
+                    "text": "You try to convience him to stay and promise him to go on more stealing missions in the next time",
+                    "value": -5,
+                    "result": "Your offer is accepted. He continues the journey with you."
+                }
+            ]
+        },
+        {
+            "text": "You come towards a border guarded by goblin warriors. They ask for your papers and your intentions",
+			"scale": "Empathie",
+            "options": [
+                {
+                    "text": "You answer them honestly and tell them you don´t know what a passport is",
+                    "value": -1,
+                    "result": "He issues you a temporary visa and let´s you pass. This time"
+                },
+                {
+                    "text": "You try to bribe him",
+                    "value": -3,
+                    "result": "He gets mad at you and shooes you away. You´ll need to find another way."
+                },
+                {
+                    "text": "Tell him you are on a quest in the name of the goblin king (lie)",
+                    "value": -5,
+                    "result": "He doesn't belive you and shooes you away. You´ll need to find another way."
+                }
+            ]
+        },
+        {
+            "text": "An artist is performing an impressive fireshow. His companion is going around collecting money",
+			"scale": "Empathie",
+            "options": [
+                {
+                    "text": "You cheer and are amazed. You give that little you can spare",
+                    "value": -1,
+                    "result": "He continues the show and thanks the audience. You continue your journey"
+                },
+                {
+                    "text": "You enjoyed the show, but don´t have enough money to spend it on such things",
+                    "value": -3,
+                    "result": "He stops the show, because nobody paid him. You continue the journey."
+                },
+                {
+                    "text": "You don´t like the show and you wont give any money",
+                    "value": -5,
+                    "result": "You wasted enough time. You continue your journey."
+                }
+            ]
+        },
+        {
+            "text": "After a great meal at an inn, you got your change. Somehow its all gold coins instead of the copper you gave",
+			"scale": "Verantwortungsbewusstsein",
+            "options": [
+                {
+                    "text": "You keep the money",
+                    "value": 1,
+                    "result": "You continue the journey richer than before. You earn 10 gold coins."
+                },
+                {
+                    "text": "You give the money back",
+                    "value": 5,
+                    "result": "The barmaid thanks you. As a thanks you get a round for free."
+                }
+            ]
+        },
+        {
+            "text": "You come across a burned village.",
+			"scale": "Verantwortungsbewusstsein",
+            "options": [
+                {
+                    "text": "You search the ruins for survivors.",
+                    "value": -1,
+                    "result": "There´s nobody here. But you find 5 silver coins in one of the houses."
+                },
+                {
+                    "text": "You look for clues what happened here",
+                    "value": -3,
+                    "result": "it seems like a dragonattack. You report that to the next guard station."
+                },
+                {
+                    "text": "It´s non of your buisness, you keep on the road, not risking to meet the potential arsonists.",
+                    "value": -5,
+                    "result": "You continue your journey."
+                }
+            ]
+        },
+        {
+            "text": "Your old nemisis lies beaten bloody on the ground. Its up to you to end his misery and threat once and for all.",
+			"scale": "Verantwortungsbewusstsein",
+            "options": [
+                {
+                    "text": "You steal his stuff and leave him be.",
+                    "value": 1,
+                    "result": "You got some 2 gold coins and a glittering sword from him. He swears revenge"
+                },
+                {
+                    "text": "You leave him how you found him",
+                    "value": 3,
+                    "result": "He calls you names and hopes your paths never cross again."
+                },
+                {
+                    "text": "You let your priest heal him.",
+                    "value": 5,
+                    "result": "He thanks you and gifts you his magic sword as a reward."
+                }
+            ]
+        },
+        {
+            "text": "The knights of the forrest are approching you in a delicate matter. There need you to bring a package to the next post.",
+			"scale": "Verantwortungsbewusstsein",
+            "options": [
+                {
+                    "text": "You don´t want an extra burden. You politly recline",
+                    "value": 1,
+                    "result": "You continue your journey."
+                },
+                {
+                    "text": "You´ll do the job, but you need some payment. Adventures have to eat.",
+                    "value": 3,
+                    "result": "The guards give you 5 silver coins and the package. The adventure continues"
+                },
+                {
+                    "text": "Yeah another quest awaits. You happily accept.",
+                    "value": 5,
+                    "result": "The guards give you 5 silver coins and the package. The adventure continues"
+                }
+            ]
+        },
+        {
+            "text": "You come across a prison transport. The guards tell you they will be hanged for stealing an orange of the high lords glass gardens. What do you do?",
+			"scale": "Verantwortungsbewusstsein",
+            "options": [
+                {
+                    "text": "You feel sorry for the lads but don´t do anything.",
+                    "value": 1,
+                    "result": "You continue your journey."
+                },
+                {
+                    "text": "You try to convience the guards to free them.",
+                    "value": 3,
+                    "result": "The guards feel the same about the hard justice, but they won´t risk their heads too. But they leave the waggon for enough time for you to free the prisoners."
+                },
+                {
+                    "text": "You attack the guards in trying to free the prisoners.",
+                    "value": 5,
+                    "result": "You defeat them and let the poor souls leave."
+                }
+            ]
+        },
+        {
+            "text": "The road is long and uphill. It will be a long way till you´ll reach the mountain top. Your crew looks weary but able to walk the rest of the route. It starts to rain.",
+			"scale": "Verantwortungsbewusstsein",
+            "options": [
+                {
+                    "text": "You push them harder to get there. It´s a question of motivation.",
+                    "value": 1,
+                    "result": "You reach the hill after a long and bitter hour. You´re muddy, tired and wet to the bones."
+                },
+                {
+                    "text": "You help them by carrying some of the heavier stuff.",
+                    "value": 3,
+                    "result": "You reach the hill after a long and bitter hour. You´re muddy, tired and wet to the bones."
+                },
+                {
+                    "text": "You take a short rest till the rain is over",
+                    "value": 5,
+                    "result": "You find shelter in a cave. After the rains stopped your reach the hilltop easily."
+                }
+            ]
+        },
+        {
+            "text": "The group wants to take a day off and rest on a beautiful lakeside.",
+			"scale": "Verantwortungsbewusstsein",
+            "options": [
+                {
+                    "text": "You don´t have time for that, you promise them the journey won´t take much longer.",
+                    "value": 1,
+                    "result": "The journey takes much longer. The group starts to become stressed out."
+                },
+                {
+                    "text": "You understand their perspective but you try to convience them to just go on a lttle bit further.",
+                    "value": 3,
+                    "result": "After a while you come across an inn. You allow them a half day of rest. "
+                },
+                {
+                    "text": "You really want to go on, but you repsect the wishes of the group.",
+                    "value": 5,
+                    "result": "After the day spend in the sun, you group is fit and happily continues the journey."
+                }
+            ]
+        },
+        {
+            "text": "Some ghouls are waiting on the side of the road. They look gharstly but don´t seem to bothered by your presence.",
+			"scale": "Verantwortungsbewusstsein",
+            "options": [
+                {
+                    "text": "You attack the foul creatures.",
+                    "value": 1,
+                    "result": "They acream in terror as you slay them."
+                },
+                {
+                    "text": "You greet them politly and ask for passage.",
+                    "value": 5,
+                    "result": "They greet back and offer you some of their strange meat. You decline and continue your journey."
+                }
+            ]
+        },
+        {
+            "text": "After days without food, you go hunting. After wounding an elk, a hoard of goblines attacks it from out of the bushes and kills it. ",
+			"scale": "Verantwortungsbewusstsein",
+            "options": [
+                {
+                    "text": "You fight them and defend your meal.",
+                    "value": 1,
+                    "result": "You win and celebrate your victory with a great meal."
+                },
+                {
+                    "text": "You give him a part of the elk, but not to much, since you need the most of it.",
+                    "value": 3,
+                    "result": "It´s enough to still the hunger, but you wish there would be more of it."
+                },
+                {
+                    "text": "You make a deal and try to hunt together for more . They know the forrest much better than you.",
+                    "value": 5,
+                    "result": "After a long day hunting, you and the goblins create a big feast and celebrate your new found friendship."
+                }
+            ]
+        },
+        {
+            "text": "Because of some fights with the undead, you´re late for the delivery of a package you promised. The receiver doesn´t look happy.",
+			"scale": "Verantwortungsbewusstsein",
+            "options": [
+                {
+                    "text": "There was no word of the dangers on the way. You demand more payment to reimburse your costs.",
+                    "value": 1,
+                    "result": "He scolds you for your rudenes and gives you 3 silver coins."
+                },
+                {
+                    "text": "You explain the situation to him and give him the package.",
+                    "value": 3,
+                    "result": "He warms up and give you 4 silver coins for your troubles."
+                },
+                {
+                    "text": "You thank him for his patience.",
+                    "value": 5,
+                    "result": "He warms up and gives you 5 silver coins for your trouble."
+                }
+            ]
+        },
+        {
+            "text": "You get ahold of a magic bag which inside is much bigger than the outside. ",
+			"scale": "Ordnung",
+            "options": [
+                {
+                    "text": "You store only your stuff in it and organize it neatly. It´s no use if you can´t find anything",
+                    "value": -1,
+                    "result": "Such a wonderfull artefact. Because of your tidyness, you become a much better adventurer."
+                },
+                {
+                    "text": "You let your group also drop there stuff in there. What a practical gimmick.",
+                    "value": -5,
+                    "result": "It becomes some kind of a mess. It takes so long to find something in there. You start using it only for things like firewood."
+                }
+            ]
+        },
+        {
+            "text": "Just as the nightfall comes, you reach an hole of halflings. They are very welcoming of your group of strangers and offer you one of their holes to spend the night. What do you do?",
+			"scale": "Ordnung",
+            "options": [
+                {
+                    "text": "You won´t come into their dirty homes. You leave.",
+                    "value": -1,
+                    "result": "You cant find an other sleeping place this night, you continue the journey sleepy"
+                },
+                {
+                    "text": "The holes are not your favorite choice, you´ll sleep under the sky but enjoy their company on the fire.",
+                    "value": -3,
+                    "result": "You enjoy the night and continue the journey well rested."
+                },
+                {
+                    "text": "Halflings have the cosiest places. You quickly accept ther offer and look forward for some sleep in an almost real house.",
+                    "value": -5,
+                    "result": "You enjoy the night and continue the journey well rested."
+                }
+            ]
+        },
+        {
+            "text": "Your scout is using your binoculars, after his mission, he forgets them to give them back to you.",
+			"scale": "Ordnung",
+            "options": [
+                {
+                    "text": "You demand to give them back. They are a precious artifact.",
+                    "value": -1,
+                    "result": "He says sorry and hands them back. "
+                },
+                {
+                    "text": "He probably needs them more than you, you let them have them for the moment.",
+                    "value": -5,
+                    "result": "Because he had the binoculars, he´s able top spot a group of bandits early. You hide from them."
+                }
+            ]
+        },
+        {
+            "text": "You arrive at a village where everyting seems to be the opposite. Up is down and left is right. Water is hard and the air became liquid. How do you handle this situation?",
+			"scale": "Ordnung",
+            "options": [
+                {
+                    "text": "Witchcraft, the devils lot. You try to banish this unholy phenomen.",
+                    "value": -1,
+                    "result": "Your priest performs the ritual. You hear screams and thunder. After a loud bang and a bright flash, you´re in the middle of a field. No trace of the village."
+                },
+                {
+                    "text": "It doesn’t seem to dangerous, but better to leave as quick as possible",
+                    "value": -3,
+                    "result": "It takes some time to leave, somehow you seem to run in circles. But after some time you find a way out."
+                },
+                {
+                    "text": "Ha what a fun place. You embrace the strangeness of the place.",
+                    "value": -5,
+                    "result": "You wake up the next morning on a field. There is an empty space where the village was before."
+                }
+            ]
+        },
+        {
+            "text": "You approach an camp of big ogres, there is no way around. Battle is the only option. How will you succed?",
+			"scale": "Ordnung",
+            "options": [
+                {
+                    "text": "You´ll storm their camp and get them by surprise and overwhelming fighting power",
+                    "value": 1,
+                    "result": "You win the fight but some of your companions get badly hurt. After some healing time you continue your journey."
+                },
+                {
+                    "text": "You prepare for battle. You get prepared as best as you can but what will happen happens",
+                    "value": 3,
+                    "result": "You win the fight but some of your companions get lightly hurt. After short healing time you continue your journey."
+                },
+                {
+                    "text": "You have the perfect masterplan. The mage in your entourage tries to losen the bolders on the cliff and the rouge will lay some traps. There is no possibility you´ll lose",
+                    "value": 5,
+                    "result": "You win the fight and none of your companions get hurt."
+                }
+            ]
+        },
+        {
+            "text": "Like everyday you wake up by sunrise and prepare to leave. But some of your group drank till late in the night and are still sleeping.",
+			"scale": "Ordnung",
+            "options": [
+                {
+                    "text": "You let them sleep and wait for them.",
+                    "value": 1,
+                    "result": "When they wake its late afternoon. You continue your journey."
+                },
+                {
+                    "text": "You let them sleep some more, but eventually you wake them up. Your journey has the highest priority.",
+                    "value": 3,
+                    "result": "You continue your journey"
+                },
+                {
+                    "text": "You spill the bucket of water on them. You won´t let there drunkenes mess with your plans.",
+                    "value": 5,
+                    "result": "You continue your journey"
+                }
+            ]
+        },
+        {
+            "text": "Some bandits are chased by some guards. Theý´ve stolen from the lords field. They are running towards you",
+			"scale": "Ordnung",
+            "options": [
+                {
+                    "text": "You let them get away and stand in the way of the guards, helping them escape",
+                    "value": 1,
+                    "result": "The guards scold you for your incompetence. You have to pay a fine of 5 gold coins."
+                },
+                {
+                    "text": "You do nothing and see how the chase goes on",
+                    "value": 3,
+                    "result": "After a while the guards chatch the bandits."
+                },
+                {
+                    "text": "You stop the bandits and helpt the guard cath them",
+                    "value": 5,
+                    "result": "The guards thank you and award you with 2 gold coins for your help."
+                }
+            ]
+        },
+        {
+            "text": "You are counting your goldcoins when you realize one is misssing. What are you doing?",
+			"scale": "Ordnung",
+            "options": [
+                {
+                    "text": "You let it slide and are sure you made a mistake the last time.",
+                    "value": 1,
+                    "result": "You can live with it and continue your journey"
+                },
+                {
+                    "text": "You are sure, you didn´t lose it and search your bags again.",
+                    "value": 3,
+                    "result": "You can´t find it. You continue your journey slightly frustrated."
+                },
+                {
+                    "text": "You demand the group to show them their belongings. So you´ll find the thief.",
+                    "value": 5,
+                    "result": "Nobody has any gold coins on them. They´re sad you didn´t trust them."
+                }
+            ]
+        },
+        {
+            "text": "You come across a field of halflingherbs. It´s forbidden in these areas of the kingdom. The bard almost instantly runs into the field to snack some. Whats your response?",
+			"scale": "Ordnung",
+            "options": [
+                {
+                    "text": "That’s an risk to your endevour. You stop him",
+                    "value": 1,
+                    "result": "He calls you a rightous overseer."
+                },
+                {
+                    "text": "You turn on a blind eye, but are stern in your will to continuily quickly",
+                    "value": 3,
+                    "result": "The journey continues, but a bit slower. The bard has some trouble to walk in a straight line."
+                },
+                {
+                    "text": "You try some yourself",
+                    "value": 5,
+                    "result": "Everything becomes blurry. You need some rest before you can continue. But it was a unique experience."
+                }
+            ]
+        },
+        {
+            "text": "A carnival has been set up on in the forrest. You try your luck at the bow and arrow game. You don´t seem to have much luck.",
+			"scale": "Ordnung",
+            "options": [
+                {
+                    "text": "The game is rigged, after two tries, you save the rest of you money.",
+                    "value": 1,
+                    "result": "You continue without the prize."
+                },
+                {
+                    "text": "You try your best but gave yourself a limit of 10 tries. ",
+                    "value": 3,
+                    "result": "You lose 10 silver coins, but don´t win the prize."
+                },
+                {
+                    "text": "You´ll not stop until you´ve won the big prize.",
+                    "value": 5,
+                    "result": "After you spend all your gold, you win the prize with the last shot. A reward is a magic arrow that always find its target."
+                }
+            ]
+        }
+    ],
+    "end": {
+        "Empathie": "After the long journey you come to the Kings court. After hearing of your Adventures he offers you a place on his round table. You find a place of Honour and become a honorable Knight.",
+        "Verantwortungsbewusstsein": "Deep in the forrest you come among the mysterious Kingdom of the elves. They accept you as one of their own after you showed them compassion and respect for all living things.",
+        "Ordnung": "You find yourself among the kingdom of the dwarves. They accept you as one of their own after you showed them your dicipline and righteous way of being."
+    }
+}
