@@ -24,7 +24,7 @@ window.onload = introduction()
 /* Functions for game play */
 
 function introduction() {
-    displayText("Welcome to TITLE! We want to make this game a good experience for our target groups. "
+    displayText("Welcome to Fairytale Adventure! We want to make this game a good experience for our target groups. "
         + "For that we need your help. Please play this game and fill out our questionnaire afterwards.");
     createContinueButton()
 }
@@ -79,12 +79,12 @@ function end() {
 
 function forwarding() {
     clearText();
-    displayText("Thank you for playing! Please help us improve our game by answering a few questions!\n"
+    displayText("Thank you for playing Fairytale Adventure! Please help us improve our game by answering a few questions!\n"
         + "In order to do so, please copy the code displayed below, "
         + "open the questionnaire by clicking on the button (opens in a new tab) "
         + "and paste the code into the appropriate field on the first page of the questionnaire.")
     displayCode(code);
-    addLink("https://example.com", "Magically take me to the questionnaire") //TODO Update link
+    addLink("https://www.soscisurvey.de/textrpg/", "Magically take me to the questionnaire")
 }
 
 function updateCode(value) {
