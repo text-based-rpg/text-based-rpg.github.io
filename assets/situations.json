@@ -23,39 +23,39 @@
             ]
         },
         {
-            "text": "You´re distracted for a moment. That´s enough to fall into a big pound of mud you oversaw. Your companions are mockingly laughing loudly. What ist your action?",
+            "text": "You're distracted for a moment. That's enough to fall into a big pound of mud you oversaw. Your companions are mockingly laughing loudly. What ist your action?",
 			"scale": "Empathie",
             "options": [
                 {
                     "text": "You demand to be freed immediately.",
                     "value": 1,
-                    "result": "You´re helped out of the hole and continue your journey dirty."
+                    "result": "You're being helped out of the hole and continue your journey dirty."
                 },
                 {
                     "text": "You throw some mud at them to make it square.",
                     "value": 3,
-                    "result": "You´re helped out of the hole and continue your journey dirty."
+                    "result": "You're being helped out of the hole and continue your journey dirty."
                 },
                 {
-                    "text": "You laugh humorfully with them and try to get out of the hole.",
+                    "text": "You laugh humorously with them and try to get out of the hole.",
                     "value": 5,
-                    "result": "You´re helped out of the hole and continue your journey dirty."
+                    "result": "You're being helped out of the hole and continue your journey dirty."
                 }
             ]
         },
         {
-            "text": "Soon the sun sets and you´ve made a camp to spend the night. After a while you hear some strange noises and rattling. The youngest of your companions seems really scared.",
+            "text": "Soon the sun sets and you set up camp to spend the night. After a while you hear some strange noises and rattling. The youngest of your companions seems really scared.",
 			"scale": "Empathie",
             "options": [
                 {
-                    "text": "The undead are approaching. Better be save and form a defense ring.",
+                    "text": "The undead are approaching. Better be save and form a defensive ring.",
                     "value": 1,
-                    "result": "You stay awake and nothing happends. Tired you continue the journey on the next morning."
+                    "result": "You stay awake and nothing happens. Tired you continue the journey the next morning."
                 },
                 {
                     "text": "You climb the a tree and scout the position. You try to calm the young warrior.",
                     "value": 3,
-                    "result": "You stay awake and are tired the next morning. Nothing happened, but your group got sleep and is well rested."
+                    "result": "You stay awake and are tired the next morning. Nothing happened, but your group got enough sleep and is well rested."
                 },
                 {
                     "text": "You keep the others calm, and say there are no undead seen in centuries in that part of the world. You make sure they find their needed rest but stay alarmed.",
@@ -65,7 +65,7 @@
             ]
         },
         {
-            "text": "On the road, you come upon an crudily constructed fort, blocking the path. On top you see a gnarly creature pointing an bow at you.",
+            "text": "On the road, you come upon an crudely constructed fort, blocking the path. On top you see a gnarly creature pointing a bow at you.",
 			"scale": "Empathie",
             "options": [
                 {
@@ -74,9 +74,9 @@
                     "result": "After a long fight, you overwhelm the fort and scare the creature away. You continue on your path."
                 },
                 {
-                    "text": "You demand passage and won´t accept any hostilities.",
+                    "text": "You demand passage and won't accept any hostilities.",
                     "value": 3,
-                    "result": "He aggrees under the condition of payment. You lose some of your gold."
+                    "result": "He agrees under the condition of payment. You lose some of your gold."
                 },
                 {
                     "text": "You greet him friendly and ask if he would be willing to let you through on your important mission.",
@@ -86,7 +86,7 @@
             ]
         },
         {
-            "text": "You come across a strange looking merchant with some mysterious artefacts. He offers you to choose any of his items, but warns you, that you don´t pay with money.",
+            "text": "You come across a strange looking merchant with some mysterious artifacts. He offers you to choose any of his items, but warns you, that you don't pay with money.",
 			"scale": "Empathie",
             "options": [
                 {
@@ -102,7 +102,7 @@
                 {
                     "text": "You ask for something magical, that helps you uncover secrets",
                     "value": 5,
-                    "result": "You find an glas eye that is kept in a jar full of a strange liquid. The merchant tells you about great secrets it will help you uncover, but warns about the great price it will cost you."
+                    "result": "You find an glass eye that is kept in a jar full of a strange liquid. The merchant tells you about great secrets it will help you uncover, but warns about the great price it will cost you."
                 }
             ]
         },
@@ -111,40 +111,40 @@
 			"scale": "Empathie",
             "options": [
                 {
-                    "text": "It´s the best thing that has ever happenend to you.",
+                    "text": "It's the best thing that has ever happened to you.",
                     "value": -1,
                     "result": "You continue your journey with your new friend happily. The rising number of attacks is more than worth it."
                 },
                 {
                     "text": "You enjoy the song but are afraid of the dangers the song will attract and you could use some sleep. You hush her away.",
                     "value": -3,
-                    "result": "You soon begin to miss your companion, but are happy you´ve met her."
+                    "result": "You soon begin to miss your companion, but are happy you've met her."
                 },
                 {
                     "text": "You get annoyed really soon and hush her away.",
                     "value": -5,
-                    "result": "You´re happy the pixie is away. You continue your journey."
+                    "result": "You're happy the pixie is gone. You continue your journey."
                 }
             ]
         },
         {
-            "text": "You come across a beautiful spot a painter choosed for a painting. He asks you to join the scenery and stand model for him.",
+            "text": "You come across a beautiful spot a painter chose for a painting. He asks you to join the scenery and stand model for him.",
 			"scale": "Empathie",
             "options": [
                 {
-                    "text": "You choose to make a happy face and ask your entourage to pose friendly",
+                    "text": "You  make a happy face and ask your entourage to pose friendly",
                     "value": -1,
-                    "result": "The painting is a masterpiece. Soon it´ll hang in some king´s hall."
+                    "result": "The painting is a masterpiece. Soon it'll hang in some kings hall."
                 },
                 {
                     "text": "You try to make an impression and pose as majestic as possible",
                     "value": -3,
-                    "result": "The painting is a masterpiece. Soon it´ll hang in some king´s hall."
+                    "result": "The painting is a masterpiece. Soon it'll hang in some kings hall."
                 },
                 {
                     "text": "You pose as a brutish warrior and make a scary face",
                     "value": -5,
-                    "result": "The painting is a masterpiece. Soon it´ll hang in some king´s hall."
+                    "result": "The painting is a masterpiece. Soon it'll hang in some kings hall."
                 }
             ]
         },
@@ -160,10 +160,10 @@
                 {
                     "text": "You let him leave, but you will need a new rogue.",
                     "value": -3,
-                    "result": "It´s hard to adventure without him. But in the next inn you find a new rogue."
+                    "result": "It's hard to adventure without him. But in the next inn you find a new rogue."
                 },
                 {
-                    "text": "You try to convience him to stay and promise him to go on more stealing missions in the next time",
+                    "text": "You try to convince him to stay and promise him to go on more stealing missions in the future",
                     "value": -5,
                     "result": "Your offer is accepted. He continues the journey with you."
                 }
@@ -174,38 +174,38 @@
 			"scale": "Empathie",
             "options": [
                 {
-                    "text": "You answer them honestly and tell them you don´t know what a passport is.",
+                    "text": "You answer them honestly and tell them you don't know what a passport is.",
                     "value": -1,
-                    "result": "He issues you a temporary visa and let´s you pass. This time."
+                    "result": "He issues you a temporary visa and let's you pass. This time."
                 },
                 {
                     "text": "You try to bribe him.",
                     "value": -3,
-                    "result": "He gets mad at you and shooes you away. You´ll need to find another way."
+                    "result": "He gets mad at you and shoos you away. You'll need to find another way."
                 },
                 {
                     "text": "Tell him you are on a quest in the name of the goblin king (lie).",
                     "value": -5,
-                    "result": "He doesn't belive you and shooes you away. You´ll need to find another way."
+                    "result": "He doesn't believe you and shoos you away. You'll need to find another way."
                 }
             ]
         },
         {
-            "text": "An artist is performing an impressive fireshow. His companion is going around collecting money.",
+            "text": "An artist is performing an impressive fire show. His companion is going around collecting money.",
 			"scale": "Empathie",
             "options": [
                 {
-                    "text": "You cheer and are amazed. You give that little you can spare.",
+                    "text": "You cheer and are amazed. You give what you can spare.",
                     "value": -1,
                     "result": "He continues the show and thanks the audience. You continue your journey."
                 },
                 {
-                    "text": "You enjoyed the show, but don´t have enough money to spend it on such things.",
+                    "text": "You enjoyed the show, but don't have enough money to spend it on such things.",
                     "value": -3,
                     "result": "He stops the show, because nobody paid him. You continue the journey."
                 },
                 {
-                    "text": "You don´t like the show and you won´t give any money",
+                    "text": "You don't like the show and you won't give any money",
                     "value": -5,
                     "result": "You wasted enough time. You continue your journey."
                 }
@@ -234,28 +234,28 @@
                 {
                     "text": "You search the ruins for survivors.",
                     "value": -1,
-                    "result": "There´s nobody here. But you find 5 silver coins in one of the houses."
+                    "result": "There's nobody here. But you find 5 silver coins in one of the houses."
                 },
                 {
                     "text": "You look for clues what happened here",
                     "value": -3,
-                    "result": "it seems like a dragon attack. You report that to the next guard station."
+                    "result": "It seems like a dragon attack. You report that to the next guard station."
                 },
                 {
-                    "text": "It´s non of your buisness, you keep on the road, not risking to meet the potential arsonists.",
+                    "text": "It's non of your business, you stay on the road, not risking to meet the potential arsonists.",
                     "value": -5,
                     "result": "You continue your journey."
                 }
             ]
         },
         {
-            "text": "Your old nemisis lies beaten bloody on the ground. Its up to you to end his misery and threat once and for all.",
+            "text": "Your old nemesis lies beaten bloody on the ground. Its up to you to end his misery and threat once and for all.",
 			"scale": "Verantwortungsbewusstsein",
             "options": [
                 {
                     "text": "You steal his stuff and leave him be.",
                     "value": 1,
-                    "result": "You got some 2 gold coins and a glittering sword from him. He swears revenge."
+                    "result": "You got 2 gold coins and a glittering sword from him. He swears revenge."
                 },
                 {
                     "text": "You leave him how you found him.",
@@ -270,16 +270,16 @@
             ]
         },
         {
-            "text": "The knights of the forrest are approching you in a delicate matter. There need you to bring a package to the next post.",
+            "text": "The knights of the forrest are approaching you in a delicate matter. They need you to bring a package to the next post.",
 			"scale": "Verantwortungsbewusstsein",
             "options": [
                 {
-                    "text": "You don´t want an extra burden. You politly decline.",
+                    "text": "You don't want an extra burden. You politely decline.",
                     "value": 1,
                     "result": "You continue your journey."
                 },
                 {
-                    "text": "You´ll do the job, but you need some payment. Adventurers have to eat.",
+                    "text": "You'll do the job, but you need some payment. Adventurers have to eat.",
                     "value": 3,
                     "result": "The guards give you 5 silver coins and the package. The adventure continues."
                 },
@@ -295,14 +295,14 @@
 			"scale": "Verantwortungsbewusstsein",
             "options": [
                 {
-                    "text": "You feel sorry for the lads but don´t do anything.",
+                    "text": "You feel sorry for the lads but don't do anything.",
                     "value": 1,
                     "result": "You continue your journey."
                 },
                 {
-                    "text": "You try to convience the guards to free them.",
+                    "text": "You try to convince the guards to free them.",
                     "value": 3,
-                    "result": "The guards feel the same about the hard justice, but they won´t risk their heads. But they leave the waggon for enough time for you to free the prisoners."
+                    "result": "The guards feel the same about the hard justice, but they won't risk their heads. But they leave the waggon for enough time for you to free the prisoners."
                 },
                 {
                     "text": "You attack the guards in trying to free the prisoners.",
@@ -312,18 +312,18 @@
             ]
         },
         {
-            "text": "The road is long and uphill. It will be a long way till you´ll reach the mountain top. Your crew looks weary but able to walk the rest of the route. It starts to rain.",
+            "text": "The road is long and uphill. It will be a long way till you'll reach the mountain top. Your crew looks weary but able to walk the rest of the route. It starts to rain.",
 			"scale": "Verantwortungsbewusstsein",
             "options": [
                 {
-                    "text": "You push them harder to get there. It´s a question of motivation.",
+                    "text": "You push them harder to get there. It's a question of motivation.",
                     "value": 1,
-                    "result": "You reach the hill after a long and bitter hour. You´re muddy, tired and wet to the bones."
+                    "result": "You reach the hill after a long and bitter hour. You're muddy, tired and wet to the bones."
                 },
                 {
                     "text": "You help them by carrying some of the heavier stuff.",
                     "value": 3,
-                    "result": "You reach the hill after a long and bitter hour. You´re muddy, tired and wet to the bones."
+                    "result": "You reach the hill after a long and bitter hour. You're muddy, tired and wet to the bones."
                 },
                 {
                     "text": "You take a short rest till the rain is over",
@@ -337,24 +337,24 @@
 			"scale": "Verantwortungsbewusstsein",
             "options": [
                 {
-                    "text": "You don´t have time for that, you promise them the journey won´t take much longer.",
+                    "text": "You don't have time for that, you promise them the journey won't take much longer.",
                     "value": 1,
                     "result": "The journey takes much longer. The group starts to become stressed out."
                 },
                 {
-                    "text": "You understand their perspective but you try to convience them to just go on a lttle bit further.",
+                    "text": "You understand their perspective but you try to convince them to just go on a little bit further.",
                     "value": 3,
-                    "result": "After a while you come across an inn. You allow them a half day of rest. "
+                    "result": "After a while you come across an inn. You allow them half a day of rest. "
                 },
                 {
-                    "text": "You really want to go on, but you repsect the wishes of the group.",
+                    "text": "You really want to go on, but you respect the wishes of the group.",
                     "value": 5,
-                    "result": "After the day spend in the sun, you group is fit and happily continues the journey."
+                    "result": "After the day spent in the sun, you group is rested and happily continues the journey."
                 }
             ]
         },
         {
-            "text": "Some ghouls are waiting on the side of the road. They look gharstly but don´t seem to bothered by your presence.",
+            "text": "Some ghouls are waiting on the side of the road. They look ghastly but don't seem to bothered by your presence.",
 			"scale": "Verantwortungsbewusstsein",
             "options": [
                 {
@@ -363,7 +363,7 @@
                     "result": "They scream in terror as you slay them."
                 },
                 {
-                    "text": "You greet them politly and ask for passage.",
+                    "text": "You greet them politely and ask for passage.",
                     "value": 5,
                     "result": "They greet back and offer you some of their strange meat. You decline and continue your journey."
                 }
@@ -379,19 +379,19 @@
                     "result": "You win and celebrate your victory with a great meal."
                 },
                 {
-                    "text": "You give him a part of the elk, but not to much, since you need the most of it.",
+                    "text": "You give him a part of the elk, but not to much, since you need most of it.",
                     "value": 3,
-                    "result": "It´s enough to still the hunger, but you wish there was more of it."
+                    "result": "It's enough to still the hunger, but you wish there was more of it."
                 },
                 {
                     "text": "You make a deal and try to hunt together for more. They know the forrest much better than you.",
                     "value": 5,
-                    "result": "After a long day hunting, you and the goblins create a big feast and celebrate your new found friendship."
+                    "result": "After a long day of hunting, you and the goblins have a big feast to celebrate your new found friendship."
                 }
             ]
         },
         {
-            "text": "Because of some fights with the undead, you´re late for the delivery of a package you promised. The receiver doesn´t look happy.",
+            "text": "Because of some fights with the undead, you're late for the delivery of a package you promised. The recipient doesn't look happy.",
 			"scale": "Verantwortungsbewusstsein",
             "options": [
                 {
@@ -412,16 +412,16 @@
             ]
         },
         {
-            "text": "You get ahold of a magic bag which inside is much bigger than the outside. ",
+            "text": "You get a hold of a magic bag that is much bigger on the inside than it is from the outside. ",
 			"scale": "Ordnung",
             "options": [
                 {
-                    "text": "You store only your stuff in it and organize it neatly. It´s no use if you can´t find anything",
+                    "text": "You store only your stuff in it and organize it neatly. It's no use if you can't find anything",
                     "value": -1,
-                    "result": "Such a wonderfull artefact. Because of your tidyness, you become a much better adventurer."
+                    "result": "Such a wonderful artifact. Because of your tidiness, you become a much better adventurer."
                 },
                 {
-                    "text": "You let your group also drop there stuff in there. What a practical gimmick.",
+                    "text": "You let your group mates also drop their stuff in there. What a useful gimmick.",
                     "value": -5,
                     "result": "It becomes some kind of a mess. It takes so long to find something in there. You start using it only for things like firewood."
                 }
@@ -432,17 +432,17 @@
 			"scale": "Ordnung",
             "options": [
                 {
-                    "text": "You won´t come into their dirty homes. You leave.",
+                    "text": "You won't enter their dirty homes. You leave.",
                     "value": -1,
-                    "result": "You cant find another sleeping place this night, you continue the journey sleepy."
+                    "result": "You can't find another place to sleep tonight, you continue the journey sleepy."
                 },
                 {
-                    "text": "The holes are not your favorite choice, you´ll sleep under the sky but enjoy their company on the fire.",
+                    "text": "The holes are not your favorite choice, you'll sleep under the sky but enjoy their company next to the fire.",
                     "value": -3,
                     "result": "You enjoy the night and continue the journey well rested."
                 },
                 {
-                    "text": "Halflings have the cosiest places. You quickly accept ther offer and look forward for some sleep in an almost real house.",
+                    "text": "Halflings have the cosiest places. You quickly accept their offer and look forward for some sleep in an almost real house.",
                     "value": -5,
                     "result": "You enjoy the night and continue the journey well rested."
                 }
@@ -460,21 +460,21 @@
                 {
                     "text": "He probably needs them more than you, you let him have them for the moment.",
                     "value": -5,
-                    "result": "Because he has the binoculars, he´s able to spot a group of bandits early. You hide from them."
+                    "result": "Because he has the binoculars, he's able to spot a group of bandits early. You hide from them."
                 }
             ]
         },
         {
-            "text": "You arrive at a village where everyting seems to be the opposite. Up is down and left is right. Water is hard and the air became liquid. How do you handle this situation?",
+            "text": "You arrive at a village where everything seems to be the opposite. Up is down and left is right. Water is hard and the air became liquid. How do you handle this situation?",
 			"scale": "Ordnung",
             "options": [
                 {
-                    "text": "Witchcraft, the devil´s lot. You try to banish this unholy phenomen.",
+                    "text": "Witchcraft, the devil's lot. You try to banish this unholy phenomenon.",
                     "value": -1,
-                    "result": "Your priest performs the ritual. You hear screams and thunder. After a loud bang and a bright flash, you´re in the middle of a field. No trace of the village."
+                    "result": "Your priest performs the ritual. You hear screams and thunder. After a loud bang and a bright flash, you're in the middle of a field. No trace of the village."
                 },
                 {
-                    "text": "It doesn’t seem to dangerous, but better to leave as quick as possible",
+                    "text": "It doesn't seem to dangerous, but better to leave as quick as possible",
                     "value": -3,
                     "result": "It takes some time to leave, somehow you seem to run in circles. But after some time you find a way out."
                 },
@@ -490,7 +490,7 @@
 			"scale": "Ordnung",
             "options": [
                 {
-                    "text": "You´ll storm their camp and get them by surprise and overwhelming fighting power",
+                    "text": "You'll storm their camp and get them by surprise and overwhelming fighting power",
                     "value": 1,
                     "result": "You win the fight but some of your companions get badly hurt. After some healing time you continue your journey."
                 },
@@ -500,7 +500,7 @@
                     "result": "You win the fight but some of your companions get lightly hurt. After short healing time you continue your journey."
                 },
                 {
-                    "text": "You have the perfect masterplan. The mage in your entourage tries to losen the bolders on the cliff and the rogue will lay some traps. There is no possibility you´ll lose.",
+                    "text": "You have the perfect master plan. The mage in your entourage tries to loosen the boulders on the cliff and the rogue will lay some traps. There is no possibility you'll lose.",
                     "value": 5,
                     "result": "You win the fight and none of your companions get hurt."
                 }
@@ -521,14 +521,14 @@
                     "result": "You continue your journey."
                 },
                 {
-                    "text": "You spill a bucket of water on them. You won´t let their drunkennes mess with your plans.",
+                    "text": "You spill a bucket of water on them. You won't let their drunkenness mess with your plans.",
                     "value": 5,
                     "result": "You continue your journey."
                 }
             ]
         },
         {
-            "text": "Some bandits are chased by some guards. They´ve stolen from the lord´s field. They are running towards you.",
+            "text": "Some bandits are chased by some guards. They've stolen from the lord's field. They are running towards you.",
 			"scale": "Ordnung",
             "options": [
                 {
@@ -549,7 +549,7 @@
             ]
         },
         {
-            "text": "You are counting your gold coins when you realize one is misssing. What are you doing?",
+            "text": "You are counting your gold coins when you realize one is missing. What are you going to do?",
 			"scale": "Ordnung",
             "options": [
                 {
@@ -558,25 +558,25 @@
                     "result": "You can live with it and continue your journey."
                 },
                 {
-                    "text": "You are sure you didn´t lose it and search your bags again.",
+                    "text": "You are sure you didn't lose it and search your bags again.",
                     "value": 3,
-                    "result": "You can´t find it. You continue your journey slightly frustrated."
+                    "result": "You can't find it. You continue your journey slightly frustrated."
                 },
                 {
-                    "text": "You demand the group to show them their belongings. So you´ll find the thief.",
+                    "text": "You demand the group to show them their belongings. So you'll find the thief.",
                     "value": 5,
-                    "result": "Nobody has any gold coins on them. They´re sad you didn´t trust them."
+                    "result": "Nobody has any gold coins on them. They're sad you didn't trust them."
                 }
             ]
         },
         {
-            "text": "You come across a field of halflingherbs. It´s forbidden in these areas of the kingdom. The bard almost instantly runs into the field to snack some. Whats your response?",
+            "text": "You come across a field of halflingherbs. It's forbidden in these areas of the kingdom. The bard almost instantly runs into the field to snack some. Whats your response?",
 			"scale": "Ordnung",
             "options": [
                 {
-                    "text": "That´s an risk to your endevour. You stop him.",
+                    "text": "That's an risk to your endeavour. You stop him.",
                     "value": 1,
-                    "result": "He calls you a rightous overseer."
+                    "result": "He calls you a righteous overseer."
                 },
                 {
                     "text": "You turn on a blind eye, but are stern in your will to continue quickly.",
@@ -591,7 +591,7 @@
             ]
         },
         {
-            "text": "A carnival has been set up on in the forrest. You try your luck at the bow and arrow game. You don´t seem to have much luck.",
+            "text": "A carnival has been set up on in the forrest. You try your luck at the bow and arrow game. You don't seem to have much luck.",
 			"scale": "Ordnung",
             "options": [
                 {
@@ -602,10 +602,10 @@
                 {
                     "text": "You try your best but give yourself a limit of 10 tries. ",
                     "value": 3,
-                    "result": "You lose 10 silver coins, but don´t win the prize."
+                    "result": "You lose 10 silver coins, but don't win the prize."
                 },
                 {
-                    "text": "You won´t stop until you win the big prize.",
+                    "text": "You won't stop until you win the big prize.",
                     "value": 5,
                     "result": "After you spent all your gold, you win the prize with the last shot. A reward is a magic arrow that always finds its target."
                 }
@@ -613,8 +613,8 @@
         }
     ],
     "end": {
-        "Empathie": "After the long journey you come to the king´s court. After hearing of your adventures he offers you a place at his round table. You find a place of honor and become a honorable knight.",
+        "Empathie": "After the long journey you come to the king's court. After hearing of your adventures he offers you a place at his round table. You find a place of honor and become a honorable knight.",
         "Verantwortungsbewusstsein": "Deep in the forrest you come among the mysterious kingdom of the elves. They accept you as one of their own after you showed them compassion and respect for all living things.",
-        "Ordnung": "You find yourself among the kingdom of the dwarves. They accept you as one of their own after you showed them your dicipline and righteous way of being."
+        "Ordnung": "You find yourself among the kingdom of the dwarfes. They accept you as one of their own after you showed them your discipline and righteous way of being."
     }
 }
